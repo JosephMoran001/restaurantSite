@@ -2,102 +2,70 @@
 <html>
 	
 	<head>
-		<title>Joe Moran's Portfolio</title>
+		<title>Contact Us</title>
+		<style>
+			@import "restaurantStyles.css";
+		</style>
 	</head>
 	<body>
 	
 		<div id="title">
-		<h1>Portfolio for Joe Moran</h1>
+		<h1>Joe's Diner</h1>
 		</div>
 		
 		<div id="navigation">
 		<hr/>
-		<p><a href="portfolio.html" target="_blank">Portfolio</a> 
-		<a href="contactMe.html" target="_blank">Contact Me</a> 
-		<a href="testimonials.html" target="_blank">Testimonials</a></p>
+		<p><a href="index.html" target="_blank">Home</a> 
+		<a href="menu.html" target="_blank">Menu</a> 
+		<a href="contactUs.html" target="_blank">Contact Us</a></p>
 		<hr/>
 		</div>
 		
 		<div id="main">
-			<div id="aboutMe">
-			<div class="image">
-			<img src="images/jet.jpg" alt="Photograph of a Jet Fighter"/>
-			</div>
-			<div class="content">
-			<h2><em>About Me</em></h2>
-			<p>Lorem Ipsum</p>
-			<p>Lorem Ipsum</p>
-			<table>
+			<form action="submit.html" method="POST">
+			<label for="name">Name:</label><br/>
+			<input type="text" id="name" name="name"><br/>
+			<label for="email">Email:</label><br/>
+			<input type="text" id="email" name="email"><br/>
+			<label for="phone">Phone Number:</label><br/>
+			<input type="text" id="phone" name="phone"><br/>
+			<label for="contact">Reason for Inquiry:</label><br/>
+			<select id="contact" name="contact"><br/>
+				<option value="default" selected>Catering</option>
+				<option value="privateParty">Private Party</option>
+				<option value="feedback">Feedback</option>
+				<option value="other">Other</option>
+			</select>
+			<label for="info">Additional Information</label><br/>
+			<textarea id="info"></textarea><br/>
+			<fieldset>
+				<legend>Have you been to the restaurant?</legend><br/>
+				<input type="radio" id="choice2" name="questionnaire" value="no" checked>
+				<label for="choice1">No</label><br/>
+				<input type="radio" id="choice1" name="questionnaire" value="yes">
+				<label for="choice2">Yes</label><br/>
+			</fieldset>
+			<fieldset>
+				<legend>Best days to contact you:</legend><br/>
+				<input type="checkbox" id="monday" name="monday" value="monday">
+				<label for="monday">M</label><br/>
+				<input type="checkbox" id="tuesday" name="tuesday" value="tuesday">
+				<label for="tuesday">T</label><br/>
+				<input type="checkbox" id="wednesday" name="wednesday" value="wednesday">
+				<label for="wednesday">W</label><br/>
+				<input type="checkbox" id="thursday" name="thursday" value="thursday">
+				<label for="thursday">Tr</label><br/>
+				<input type="checkbox" id="friday" name="friday" value="friday">
+				<label for="friday">F</label><br/>
+			</fieldset>
+			<input type="submit" name="submit" value="Send Request">
+			</form>
 			
-			</table>
-			</div>
-			</div>
-		
-			<div id="experiences">
-			<div class="image">
-			<img src="images/ship.jpg" alt="Photograph of a Cargo Ship"/>
-			</div>
+			<hr/>
+			<div id="contactInfo">
 			<div class="content">
-			<h2><em>Past Experiences</em></h2>
-			<table>
-				<caption>Employment History</caption>
-				<tr>
-					<th>Year</th>
-					<th>Title</th>
-					<th>Company</th>
-				</tr>
-				<tr>
-					<td>Current</td>
-					<td>Apprentice</td>
-					<td>The Software Guild</td>
-				</tr>
-				<tr>
-					<td>2012-2017</td>
-					<td>Clerk</td>
-					<td>LostUrMail Shipping</td>
-				</tr>
-				<tr>
-					<td>2000-2012</td>
-					<td>Student</td>
-					<td>University of Blaj</td>
-				</tr>
-			</table>
-			</div>
-			</div>
-		
-			<div id="hobbies">
-			<div class="image">
-			<img src="images/city.jpg" alt="Photograph of a City Skyline"/>
-			</div>
-			<div class="content">
-			<h2><em>Hobbies</em></h2>
-				<ul>
-					<li>Reading</li>
-					<ol>
-						<li>Stephen King</li>
-						<li>Jim Butcher</li>
-						<li>Robin Hobb</li>
-					</ol>
-					<li>Hiking</li>
-					<ol>
-						<li>Ozarks</li>
-						<li>Rockies</li>
-						<li>Sierra Nevadas</li>
-						<li>Appalachia</li>
-					</ol>
-					<li>Ski Slopes</li>
-					<ul>
-						<li>Snowmass, Colorado</li>
-						<li>Taos, New Mexico</li>
-						<li>Okemo, Vermont</li>
-					</ul>
-					<li>Colors</li>
-					<ul>
-						<li>Yellow-Grey</li>
-						<li>Beige</li>
-						<li>Off-White</li>
-					</ul>
-				</ul>
+			<h2><em>211 Olentangy Road, Columbus, Ohio, 43210</em></h2>
+			<h2><em>310-867-5309</em></h2>
 			</div>
 			</div>
 		</div>
