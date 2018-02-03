@@ -5,6 +5,7 @@
 	color: black;
 	background-color: green;
 	outline: yellow solid;
+	font-family: "Times New Roman", Times, serif;
 }
 
 #navigation{
@@ -38,15 +39,9 @@ a:active{
 	text-decoration: none;
 }
 
-
-#title{
-	font-family: "Times New Roman", Times, serif;
-	color: black;
-}
-
 body{
 	font-family:Arial,Helvetica,sans-serif;
-	background-color: #d5d2cb; /*in flowers by kinkajou888 - colourlovers.com*/
+	background-color: beige; /*in flowers by kinkajou888 - colourlovers.com*/
 }
 
 hr{
@@ -88,13 +83,13 @@ fieldset{
 input,label{
 	font-size:16px;
 	font-family:Arial, Helvetica,serif;
-	font-weight:bold;
+	font-weight: normal;
 }
 
 legend{
 	font-size:16px;
 	font-family:Arial, Helvetica,serif;
-	font-weight:bold;
+	font-weight: normal;
 }
 
 select{
